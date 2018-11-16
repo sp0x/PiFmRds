@@ -3,3 +3,4 @@ src/pydemod
 src/test
 *.o
 
+/src/.vs

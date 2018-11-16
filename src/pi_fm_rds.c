@@ -122,8 +122,12 @@
 #define DRAM_PHYS_BASE 0xc0000000
 #define MEM_FLAG 0x04
 #else
-#error Unknown Raspberry Pi version (variable RASPI)
+#define PERIPH_VIRT_BASE 0x3f000000
+#define PERIPH_PHYS_BASE 0x7e000000
+#define DRAM_PHYS_BASE 0xc0000000
+#define MEM_FLAG 0x04
 #endif
+
 
 #define NUM_SAMPLES        50000
 #define NUM_CBS            (NUM_SAMPLES * 2)
